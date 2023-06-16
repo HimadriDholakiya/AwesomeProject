@@ -5,6 +5,7 @@ import Contacts from 'react-native-contacts';
 import {Contact} from '.';
 const ContactsList = () => {
   const [contacts, setContacts] = useState([]);
+  
   useEffect(() => {
     Contacts.getAll().then(contacts => {
       setContacts(contacts);
